@@ -1,0 +1,61 @@
+.range {
+  cursor  : pointer;
+  position: relative;
+  width   : 300px;
+  margin  : 30px;
+
+  &-inner {
+    // padding: 20px;
+    // margin : -20px;
+    padding-top   : 12px;
+    padding-bottom: 12px;
+    position      : relative;
+  }
+
+  &-btn {
+    display      : flex;
+    background   : #FFFFFF;
+    border       : 2px solid #686E29;
+    position     : absolute;
+    height       : 24px;
+    width        : 24px;
+    border-radius: 50%;
+
+    left          : 0;
+    top           : calc(50% - 12px);
+    transform     : translateX(-50%);
+    pointer-events: none;
+    transition    : .1s;
+  }
+
+  &-line {
+    height    : 3px;
+    background: #B6CF70;
+  }
+
+  &-progress {
+    position      : absolute;
+    left          : 0;
+    height        : 8px;
+    background    : #C8D24E;
+    top           : calc(50% - 4px);
+    pointer-events: none;
+    transition    : .1s;
+  }
+
+  &-value {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &-sign {
+    position   : relative;
+    width      : max-content;
+    max-width  : 100%;
+    display    : inline-block;
+    user-select: none;
+    font-size  : 12px;
+    margin-top : 5px;
+    font-weight: 700;
+    transition : .1s;
+  }
+}

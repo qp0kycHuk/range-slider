@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Range slider</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class=" range" data-type="single" data-max="100" data-min="0" data-to="76">
+    <input type="text" class="range-input-from" hidden>
+    <input type="text" class="range-input-to" hidden>
+    <div class="range-inner"></div>
+    <div class="range-sign">Значение <span class="range-value"></span>% </div>
+  </div>
+  <div class=" range" data-type="double" data-min="2" data-max="72" data-to="30">
+    <input type="text" class="range-input-from" hidden>
+    <input type="text" class="range-input-to" hidden>
+    <div class="range-inner"></div>
+    <div class="range-sign">
+      <span class="range-value"></span> мин.
+    </div>
+  </div>
+
+  <script src="js/range.js"></script>
+</body>
+
+</html>
